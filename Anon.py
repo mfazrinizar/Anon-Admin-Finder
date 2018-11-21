@@ -102,4 +102,4 @@ else:
 	except (KeyboardInterrupt, SystemExit):
 		print "\n\t[S] Sesi dibatalkan"
 	except:
-print "\n\t[S] Error Tidak Diketahui, Exit !"
+                print "\n\t[S] Error Tidak Diketahui, Exit !"
