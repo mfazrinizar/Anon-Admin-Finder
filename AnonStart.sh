@@ -8,7 +8,8 @@ red='\033[31;1m'
 white='\033[37;1m'                                           
 yellow='\033[33;1m'
 sleep 1
-toilet -f slant -F gay "Anon Admin Finder" | lolcat
+toilet -f slant -F gay "Anon Admin" | lolcat
+toilet -f slant -F gay "Finder" | lolcat
 echo "\033[34;1m"
 cal
 date
@@ -38,6 +39,7 @@ clear
 figlet "Anon Admin Finder" | lolcat
 echo "\033[32;1m"
 python2 Anon.py
+fi
 
 if [ $anon = Q ] || [ $anon = q ]
 then
