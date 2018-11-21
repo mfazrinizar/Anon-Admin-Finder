@@ -59,7 +59,7 @@ else:
 			print ("Check " + alamat + " dulu.Harap tunggu...")
 			konek=httplib.HTTPConnection(alamat)
 			konek.connect()
-			print "[A] Bagus + Target Online +\n"
+			print "[A] Bagus + Target Online + Bagus\n"
 		except (httplib.HTTPResponse, socket.error) as Exit:
 			raw_input("[S] Sepertinya, server offline atau alamat target salah")
 			exit()
@@ -74,7 +74,7 @@ else:
 				admin=admin.replace("\n","")
 				admin="/" + admin
 				host=alamat + admin
-				print ("\t[W]Cek " + alamat + "/"+ php[i] + "...")
+				print ("\t[W] Cek " + alamat + "/"+ php[i] + "...")
 				koneksi=httplib.HTTPConnection(alamat)
 				koneksi.request("GET",admin)
 				respon=koneksi.getresponse()
