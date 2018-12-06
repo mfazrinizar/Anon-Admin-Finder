@@ -19,7 +19,7 @@ anon="""
 \t\t+      Thanks to: All Member of DSFS Official     +       
 \t\t+=================================================+"""
 
-parser=optparse.OptionParser(usage='python2 %s  -t http://target.domain' %(sys.argv[0]))
+parser=optparse.OptionParser(usage='python2 %s -t http://target.domain' %(sys.argv[0]))
 parser.add_option("-t", action="store",dest="target",help="target site", default="")
 
 (options,args) = parser.parse_args()
