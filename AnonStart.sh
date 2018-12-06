@@ -27,18 +27,18 @@ echo ""
 echo "\033[32;1mSilahkan Pilih Tool :"
 echo "\033[32;1m"
 echo "[===============================================]"
-echo "A.> Admin Finder"
+echo "A.> Admin Page Finder"
 echo "[===============================================]"
 echo "Q.> Exit/Keluar"
 echo "[===============================================]"
-read -p "root@Tools-Anon-Admin-Finder]~#" anon
+read -p "Anon Admin Finder]-->" anon
 
 if [ $anon = A ] || [ $anon = a ]
 then
 clear
 figlet "Anon Admin Finder" | lolcat
 echo "\033[32;1m"
-python2 Anon.py
+python2 Anon2.py -h
 fi
 
 if [ $anon = Q ] || [ $anon = q ]
@@ -57,7 +57,7 @@ echo "We Do Not Forget"
 sleep 1
 echo "Expect Us"
 sleep 1
-echo "\033[32;1mDiakui, Bukan Mengakui"
+echo "\033[32;1mPerbanyaklah Membuat, Kurangilah Merusak"
 sleep 1
 exit
 fi
