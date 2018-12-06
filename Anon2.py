@@ -50,18 +50,18 @@ else:
 		'panel-administracion/login.php','wp-login.php','adminLogin.php','admin/adminLogin.php','home.php','admin.php','adminarea/index.php',
 		'adminarea/admin.php','adminarea/login.php','panel-administracion/index.php','panel-administracion/admin.php','modelsearch/index.php',
 		'modelsearch/admin.php','admincontrol/login.php','adm/admloginuser.php','admloginuser.php','admin2.php','admin2/login.php','admin2/index.php','usuarios/login.php',
-		'adm/index.php','adm.php','affiliate.php','adm_auth.php','memberadmin.php','administratorlogin.php','/adminpanel','user.php','account.html','controlpanel.html','admincontrol.html','panel-administracion/login.php','wp-login.php','adminLogin.php','admin/adminLogin.php','home.php','adminarea/index.php','adminarea/admin.php','adminarea/login.php','panel-administracion/index.php','panel-administracion/admin.php','modelsearch/index.php','modelsearch/admin.php','admincontrol/login.php','adm/admloginuser.php','admloginuser.php','admin2.php','admin2/login.php','admin2/index.php','usuarios/login.php','adm/index.php','adm.php','affiliate.php','adm_auth.php','memberadmin.php','administratorlogin.php']
+		'adm/index.php','adm.php','affiliate.php','adm_auth.php','memberadmin.php','administratorlogin.php','/adminpanel','user.php','account.html','controlpanel.html','admincontrol.html','panel-administracion/login.php','wp-login.php','adminLogin.php','admin/adminLogin.php','home.php','adminarea/index.php','adminarea/admin.php','adminarea/login.php','panel-administracion/index.php','panel-administracion/admin.php','modelsearch/index.php','modelsearch/admin.php','admincontrol/login.php','adm/admloginuser.php','admloginuser.php','admin2.php','admin2/login.php','admin2/index.php','usuarios/login.php','adm/index.php','adm.php','affiliate.php','adm_auth.php','memberadmin.php','administratorlogin.php','account.asp','admin/account.asp','admin/index.asp','admin/login.asp','admin/admin.asp','admin_area/admin.asp','admin_area/login.asp','admin_area/index.asp','adm/admloginuser.asp','admloginuser.asp','panel-administracion/index.asp','panel-administracion/admin.asp','adm_auth.asp','memberadmin.asp','admin/account.cfm','admin/index.cfm','admin/login.cfm','admin/admin.cfm','admin_area/admin.cfm','admin_area/login.cfm','siteadmin/login.cfm','siteadmin/index.cfm','admin_area/index.cfm','bb-admin/index.cfm','bb-admin/login.cfm','bb-admin/admin.cfm','admin/home.cfm','admin/controlpanel.cfm','admin.cfm','webadmin/login.cfm','adminpanel.cfm','rcjakar/admin/login.cfm','controlpanel.cfm','admincontrol.cfm','account.cfm','acceso.cfm','cp.js','admin.js','admin/home.js','admin/cp.js','login.js','admin-login.js','account.js','usuarios.js','user.js','wp-login.js','wp-login.cgi','admin.cgi','adm_cp','home.cgi','user.cgi','adm.cgi','admin2/login.cgi','admin2/index.cgi','admin2/index.js','memberadmin.cgi','affiliate.cgi','adm_auth.cgi']
 	
 		try:
 			print (anon)
 			alamat=options.target		#raw_input("Masukkan Alamat Target : ")
 			alamat=alamat.replace("http://","")
-			print ("Check " + alamat + " dulu.Harap tunggu...")
+			print ("Check " + alamat + " dulu. Harap tunggu :)")
 			konek=httplib.HTTPConnection(alamat)
 			konek.connect()
 			print "[A] Bagus + Target Online + Bagus\n"
 		except (httplib.HTTPResponse, socket.error) as Exit:
-			raw_input("[S] Sepertinya, server offline atau alamat target salah")
+			raw_input("[S] Sepertinya, server offline atau alamat target salah :(")
 			exit()
 		#print "Masukkan site source"
 		#print "1. PHP (default)"
@@ -87,9 +87,9 @@ else:
 	        		elif respon.status == 404:
 	        	    		var2 = var2
 	        		elif respon.status == 302:
-	        	    		print "%s %s" % ("\n>>>" + host, "Possible admin page (302 - Redirect)")
+	        	    		print "%s %s" % ("\n>>>" + host, "Kemungkinan admin page :) (302 - Redirect)")
 	        		else:
-	        	    		print "%s %s %s" % (host, " Interesting response:", respon.status)
+	        	    		print "%s %s %s" % (host, " Respon :", respon.status)
 	        	    		koneksi.close()
 			print("\n\nSelesai!!! \n")
 		        print var1, " Halaman admin ditemukan"
