@@ -38,7 +38,7 @@ then
 clear
 figlet "Anon Admin Finder" | lolcat
 echo "\033[32;1m"
-python2 Anon2.py -h
+python2 anon2.py -h
 fi
 
 if [ $anon = Q ] || [ $anon = q ]
